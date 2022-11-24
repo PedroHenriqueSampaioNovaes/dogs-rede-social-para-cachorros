@@ -1,0 +1,46 @@
+.photo {
+  display: grid;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.photo > div {
+  grid-area: 1 / 1;
+}
+
+@media (max-width: 40rem) {
+  .photo:nth-child(2) {
+    grid-column: initial;
+    grid-row: initial;
+  }
+}
+
+.acessos {
+  display: none;
+  grid-area: 1 / 1;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.photo:hover .acessos {
+  display: flex;
+  font-size: 1rem;
+}
+
+.photo:hover .acessos::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  background: url('../../Assets/visualizacao.svg');
+  margin-right: 0.25rem;
+}
