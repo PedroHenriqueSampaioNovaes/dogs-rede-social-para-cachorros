@@ -1,10 +1,12 @@
 import React from 'react';
+import { UserContext } from '../../UserContext';
 import styles from './PhotoComments.module.css';
 import PhotoCommentsForm from './PhotoCommentsForm';
 
 const PhotoComments = (props) => {
   const [comments, setComments] = React.useState(props.comments);
   const listComments = React.useRef();
+  const { login } = React.useContext(UserContext);
 
   React.useEffect(() => {
     listComments.current.scrollTop = listComments.current.scrollHeight;
@@ -19,11 +21,13 @@ const PhotoComments = (props) => {
           </li>
         ))}
       </ul>
-      <PhotoCommentsForm
-        setComments={setComments}
-        id={props.id}
-        single={props.single}
-      />
+      {login && (
+        <PhotoCommentsForm
+          setComments={setComments}
+          id={props.id}
+          single={props.single}
+        />
+      )}
     </>
   );
 };
