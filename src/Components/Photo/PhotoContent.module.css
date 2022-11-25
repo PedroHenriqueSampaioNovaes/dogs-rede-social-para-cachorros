@@ -40,7 +40,7 @@
 
 @media (max-width: 64rem) {
   .photo {
-    grid-template-columns: minmax(20rem, 40rem);
+    grid-template-columns: minmax(17rem, 40rem);
     height: auto;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;

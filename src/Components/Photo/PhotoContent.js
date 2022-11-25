@@ -39,4 +39,6 @@ const PhotoContent = ({ data, single }) => {
   );
 };
 
+PhotoContent.defaultProps = { single: false };
+
 export default PhotoContent;
