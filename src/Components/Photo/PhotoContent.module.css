@@ -40,7 +40,7 @@
 
 @media (max-width: 64rem) {
   .photo {
-    grid-template-columns: minmax(17rem, 40rem);
+    grid-template-columns: minmax(15rem, 40rem);
     height: auto;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
@@ -97,4 +97,10 @@
   margin-right: 0.5rem;
   position: relative;
   top: 3px;
+}
+
+@media (max-width: 22rem) {
+  .details {
+    padding: 1rem 1rem 0;
+  }
 }

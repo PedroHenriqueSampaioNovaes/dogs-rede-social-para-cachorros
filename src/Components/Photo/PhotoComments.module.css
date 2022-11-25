@@ -4,6 +4,10 @@
   overflow-y: auto;
 }
 
+.single {
+  padding: 0;
+}
+
 @media (max-width: 64rem) {
   .comments {
     min-height: 10rem;
@@ -13,4 +17,10 @@
 .comments li {
   line-height: 1.2;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 22rem) {
+  .comments {
+    padding: 0 1rem;
+  }
 }
