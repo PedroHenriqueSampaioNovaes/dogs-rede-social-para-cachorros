@@ -7,7 +7,7 @@ import Input from '../Forms/Input';
 import useForm from '../../Hooks/useForm';
 import Button from '../Forms/Button';
 import Error from '../Helper/Error';
-import Head from '../Head';
+import Head from '../Helper/Head';
 
 const LoginForm = () => {
   const username = useForm();

@@ -2,7 +2,7 @@ import React from 'react';
 import Input from '../Forms/Input';
 import useForm from '../../Hooks/useForm';
 import Button from '../Forms/Button';
-import Head from '../Head';
+import Head from '../Helper/Head';
 import useFetch from '../../Hooks/useFetch';
 import { PASSWORD_LOST } from '../../api';
 import Error from '../Helper/Error';

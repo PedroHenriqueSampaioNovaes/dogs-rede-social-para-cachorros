@@ -1,6 +1,6 @@
 import React from 'react';
 import Feed from './Feed/Feed';
-import Head from './Head';
+import Head from './Helper/Head';
 
 const Home = () => {
   return (

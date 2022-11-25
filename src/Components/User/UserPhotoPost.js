@@ -7,7 +7,7 @@ import Input from '../Forms/Input';
 import useFetch from '../../Hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
 import Error from '../Helper/Error';
-import Head from '../Head';
+import Head from '../Helper/Head';
 
 const UserPhotoPost = () => {
   const nome = useForm();
@@ -33,7 +33,7 @@ const UserPhotoPost = () => {
     const { url, options } = PHOTO_POST(formData, token);
     request(url, options);
   }
-  
+
   function handleImgChange({ target }) {
     setImg({
       preview: URL.createObjectURL(target.files[0]),

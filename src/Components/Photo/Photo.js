@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PHOTO_GET } from '../../api';
 import useFetch from '../../Hooks/useFetch';
-import Head from '../Head';
+import Head from '../Helper/Head';
 import Error from '../Helper/Error';
 import Loading from '../Helper/Loading';
 import PhotoContent from './PhotoContent';
