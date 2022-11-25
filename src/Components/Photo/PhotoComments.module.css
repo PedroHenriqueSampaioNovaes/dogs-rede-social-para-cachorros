@@ -4,19 +4,23 @@
   overflow-y: auto;
 }
 
-.single {
-  padding: 0;
+.single.comments {
+  max-height: 30rem;
 }
 
-@media (max-width: 64rem) {
-  .comments {
-    min-height: 10rem;
-  }
+.single {
+  padding: 0;
 }
 
 .comments li {
   line-height: 1.2;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 64rem) {
+  .single.comments {
+    max-height: auto;
+  }
 }
 
 @media (max-width: 22rem) {
